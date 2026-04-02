@@ -1,30 +1,27 @@
 # 🎬 Netflix Clone
 
-Projeto desenvolvido com o objetivo de replicar a interface da Netflix utilizando tecnologias fundamentais do desenvolvimento web.
-Este projeto vai além da réplica original, trazendo duas funcionalidades exclusivas criadas do zero.
+Projeto desenvolvido durante a Imersão da Alura com o objetivo de recriar a interface da Netflix, aplicando conceitos de front-end e utilizando IA como apoio no desenvolvimento.
 
-## Funcionalidades
+## 🚀 Funcionalidades
 
-- Tela de seleção de perfis
+- Seleção de perfis
 - Catálogo de filmes e séries
 - Layout responsivo inspirado na Netflix
 
-### ✨ Funcionalidades exclusivas (não existem na Netflix original)
+## 🛠️ Tecnologias
 
-- **Netflix por Humor** — O usuário seleciona como está se sentindo e recebe recomendações de filmes baseadas no seu estado emocional.
-- **Trilha Sonora** — O usuário pesquisa pelo nome de um filme e descobre todas as músicas que tocaram durante ele.
+- HTML  
+- CSS  
+- JavaScript  
+- VS Code  
+- GitHub Copilot  
+- Google Gemini  
 
-## Tecnologias utilizadas
+## 📌 Sobre o projeto
 
-- HTML
-- CSS
-- JavaScript
-- VSCode 
-- Copilot (geração de ideias e esclarecimento de dúvidas)
-- Gemini (gerar imagens, estruturar e corrigir a semântica dos códigos)
+Neste projeto, foram aplicados conceitos de:
+- Estruturação semântica com HTML  
+- Estilização com CSS  
+- Manipulação do DOM com JavaScript  
+- Uso de IA para apoio no desenvolvimento  
 
-Veja o esboço do meu projeto funcionando aqui: http://127.0.0.1:5500/ 
-
-💡Nessa imersão, coloquei em prática conceitos de estruturação semântica com HTML, 
-estilização avançada com CSS e manipulação do DOM com JavaScript e
-com o auxílio de IA como ferramenta de apoio ao desenvolvimento.
