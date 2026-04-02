@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Botão para alternar tema -->
+    <button id="theme-toggle" onclick="toggleTheme()">☀️</button>
+
+    <main>
+        <h1>Quem está assistindo?</h1>
+        <section aria-label="Perfis disponíveis">
+            <nav class="profiles">
+                <a href="catalogo.html" class="profile perfil">
+                    <figure class="item-perfil">
+                        <div class="card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <img src="./assets/perfil-1.jpg" alt="Perfil 1">
+                                </div>
+                                <div class="card-back">
+                                    <p> • Genêro favorito:<br><span>(romance, drama)</span></p>
+                                    <p> • Último filme assistido:<br><span>'Nome do Filme'</p>
+                                </div>
+                            </div>
+                        </div>
+                        <figcaption class="nome-perfil">Melissa</figcaption>
+                    </figure>
+                </a>
+                <a href="catalogo.html" class="profile perfil">
+                    <figure class="item-perfil">
+                        <div class="card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <img src="./assets/perfil-2.jpg" alt="Perfil 2">
+                                </div>
+                                <div class="card-back">
+                                    <p> • Genêro favorito:<br><span>(ação, suspense)</span></p>
+                                    <p> • Último filme assistido:<br><span>'Nome do Filme'</p>
+                                </div>
+                            </div>
+                        </div>
+                        <figcaption class="nome-perfil">Luccas</figcaption>
+                    </figure>
+                </a>
+                <a href="catalogo.html" class="profile perfil">
+                    <figure class="item-perfil">
+                        <div class="card">
+                            <div class="card-inner">
+                                <div class="card-front">
+                                    <img src="./assets/perfil-3.jpg" alt="Perfil 3">
+                                </div>
+                                <div class="card-back">
+                                    <p> • Genêro favorito:<br><span>(animação, comédia)</span></p>
+                                    <p> • Último filme assistido:<br><span>'Nome do Filme'
+                                </div>
+                            </div>
+                        </div>
+                        <figcaption class="nome-perfil">Infantil</figcaption>
+                    </figure>
+                </a>
+                <a href="catalogo.html" class="profile perfil">
+                    <figure class="item-perfil">
+                        <div class="add-icon">+</div>
+                        <figcaption class="nome-perfil">Adicionar perfis</figcaption>
+                    </figure>
+                </a>
+            </nav>
+        </section>
+    </main>
+
+    <!-- Importa o script de tema -->
+    <script src="theme.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>

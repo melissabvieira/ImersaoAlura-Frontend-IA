@@ -1,0 +1,191 @@
+body {
+    background: #141414;
+    color: #fff;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    margin: 0;
+    min-height: 100vh;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+    min-height: 100vh;
+    width: 100%;
+}
+
+h1 {
+    font-size: clamp(1.5rem, 5vw, 3.5rem); 
+    font-weight: bold;
+    margin-bottom: 2rem;
+    letter-spacing: 1px;
+    animation: fadeIn 0.8s ease-in-out both;
+}
+
+section[aria-label="Perfis disponíveis"] {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+nav.profiles {
+    display: flex;
+    gap: 1.5vw;
+    flex-wrap: wrap; 
+    justify-content: center;
+}
+
+.profile {
+    text-decoration: none;
+    color: #fff;
+    animation: fadeIn 0.6s ease-out both;
+}
+
+.profile:nth-child(1) { animation-delay: 0.2s; }
+.profile:nth-child(2) { animation-delay: 0.3s; }
+.profile:nth-child(3) { animation-delay: 0.4s; }
+.profile:nth-child(4) { animation-delay: 0.5s; }
+
+figure {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    width: 120px;
+    height: 120px;
+    perspective: 1000px;
+    margin-bottom: 0.5rem;
+}
+
+.card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.profile:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+.card-front, .card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid transparent;
+    transition: border-color 0.2s;
+}
+
+.card-back {
+    background: #222;
+    transform: rotateY(180deg);
+    padding: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    font-size: 0.72rem;
+    box-sizing: border-box;
+    color: #ccc;
+    overflow: visible;
+}
+
+.card-back p {
+    opacity: 0;
+    margin: 2px 0;
+    width: 100%;
+}
+
+.card-back p span {
+    color: #9e9e9e; 
+    font-style: italic;
+    font-size: 0.65rem;
+    display: block;
+    margin-top: 2px;
+}
+
+.profile:hover .card-back p {
+    animation: textAppear 0.5s ease-out forwards 0.3s;
+}
+
+ .profile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.add-icon {
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+    color: grey;
+    border: 3px solid transparent;
+    border-radius: 8px;
+    transition: border-color 0.2s, transform 0.2s, color 0.2s;
+}
+
+.profile:hover .card-front, .profile:hover .card-back, .profile:hover .add-icon {
+    border-color: #fff;
+}
+
+.profile:hover .add-icon {
+    transform: scale(1.05);
+    color: #fff;
+}
+
+.profile:hover figcaption {
+    color: #fff;
+}
+
+figcaption {
+    color: grey;
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin-top: 0.5rem;
+    letter-spacing: 0.5px;
+}
+
+#theme-toggle {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* Modo claro */
+body.light-mode {
+    background: #f5f5f5;
+    color: #000;
+}
+
+body.light-mode #theme-toggle {
+    color: #000;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes textAppear {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
