@@ -1,4 +1,4 @@
-# 🎬 Netflix Clone
+# 🎬 Clone Netflix 
 
 Projeto desenvolvido durante a Imersão da Alura com o objetivo de recriar a interface da Netflix, aplicando conceitos de front-end e utilizando IA como apoio no desenvolvimento.
 
